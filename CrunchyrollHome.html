@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--Jabree Flor-->
+	<!--Home Page-->
+	<meta charset="UTF-8" />
+	<meta name="author" content="Jabree Flor"/>
+	<meta name="description" content="Crunchyroll Anime"/>
+	<meta name="keywords" content="Anime, Merch, Crunchyroll"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+    <title>Crunchyroll</title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+	<header>Jabree Flor</header>
+    <div id="homeHead">
+        <SVG height="100" width="100">
+            <circle cx="50" cy="50" r="40" fill="orange"/>
+            <circle cx="53" cy="55" r="35" fill="white"/>
+            <circle cx="56" cy="60" r="30" fill="orange"/>
+            <circle cx="70" cy="45" r="15" fill="white"/>
+            <span class ="text" style="color:orange; font-family: 'Trebuchet MS'; font-size: 350%;">crunchyroll</span>
+        </SVG>
+    
+    </div>
+<div id="navigation">    
+    <nav>
+    <ul>
+        <li><a href="CrunchyrollHome.html">Home</a></li>
+        <li><a href="AboutPage.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+    </ul>
+</nav>
+</div>
+
+<div class="wrapper" id="divCrunchyGrid"></div>
+
+		<script type="text/babel">
+			
+			class MyCrunchyGrid extends React.Component {
+				constructor(props) {
+					super(props)
+
+					this.state = {
+						
+						animeIndex: 0,
+						anime: [],
+						isLoading: true,
+						
+						total: 0
+					}
+				}
+
+				handleChange = e => {
+					//handles the change in select
+					this.setState({ animeIndex: e.target.value });
+				}
+
+
+				//reads the json file
+				componentDidMount() {
+
+					fetch('anime.json')
+						.then(response => response.json())
+						.then(data => this.setState({ anime: data, isLoading: false }));
+				}
+
+				render() {
+                    //style of the select to stretch 2 columns and start in the first row
+                    const style_a = { gridColumn: "1 / span 2", gridRow: "1" };
+                    //stretches 3 columns and is in the last row
+                    const style_b = { gridColumn: "1 / span 3", gridRow: "5" };
+                    
+                    
+					
+					if (this.state.isLoading) {
+						return (<p>Loading ....</p>)
+					} else {
+						//returns the selected index option and changes each div to the selected anime
+						return (
+							<> {}
+
+								<div className="box" style={style_a} >
+									<select value={this.state.animeIndex} onChange={this.handleChange}>
+										{
+											this.state.anime.map((animes, i) =>
+												(
+													<option key={i} value={i}>
+														{animes.animeName}
+													</option>
+												)
+											)
+										}
+									</select>
+								</div>
+								<div className="box" style={{ gridColumn: "3", gridRow: "1 / span 4" }}>
+									<img src={this.state.anime[this.state.animeIndex].animeImage} height="300" width ="250"style={{ display: "block", marginRight: "auto", marginLeft: "auto" }} />
+								</div>
+                                <div className="box">Anime: </div>
+								<div className="box"> {this.state.anime[this.state.animeIndex].animeName}</div>
+								<div className="box">Episode Count: </div>
+								<div className="box"> {this.state.anime[this.state.animeIndex].episodeCount}</div>
+								<div className="box">Episode Summary: </div>
+								<div className="box"> {this.state.anime[this.state.animeIndex].animeSummary}</div>
+								<div className="box" style={style_b}><iframe width="400" height="300" src={this.state.anime[this.state.animeIndex].animeOpening}></iframe></div>
+	
+		
+							</>
+						) 
+					}
+				} 
+			} 
+
+			ReactDOM.render(<MyCrunchyGrid />, document.querySelector('#divCrunchyGrid'))
+		</script>
+    
+
+
+
+
+<footer>Crunchyroll is like Netflix for anime</footer>
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<title>Shop</title>
+<head>
+    <!--Jabree Flor-->
+    <!--Merch-->
+    <meta charset="UTF-8" />
+    <title>Crunchyroll</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="homeHead">
+        <SVG height="100" width="100">
+            <circle cx="50" cy="50" r="40" fill="orange" />
+            <circle cx="53" cy="55" r="35" fill="white" />
+            <circle cx="56" cy="60" r="30" fill="orange" />
+            <circle cx="70" cy="45" r="15" fill="white" />
+            <span class="text" style="color:orange; font-family: 'Trebuchet MS'; font-size: 350%;">crunchyroll</span>
+        </SVG>
+
+    </div>
+    <div id="navigation">
+        <nav>
+            <ul>
+                <li><a href="CrunchyrollHome.html">Home</a></li>
+                <li><a href="AboutPage.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="wrapper" id="divCrunchyGrid"></div>
+
+
+    <table width="500" border="0" cellpadding="5">
+        <tr>
+
+            <td align="center" valign="center">
+                <img src="shirts.jpg" alt="description here" height="200" width="200" />
+                <br />
+                Crunchyroll Shirts ($25)
+            </td>
+
+            <td align="center" valign="center">
+                <img src="hoodies.jpg" alt="description here" height="200" width="200" />
+                <br />
+                Crunchyroll Hoodies ($50)
+            </td>
+            <td align="center" valign="center">
+                <img src="pins.jpg" alt="description here" height="200" width="200" />
+                <br />
+                Crunchyroll Pins ($10)
+            </td>
+            <td align="center" valign="center">
+                <img src="sweater.jpg" alt="description here" height="200" width="200" />
+                <br />
+                Crunchyroll Sweater ($30)
+            </td>
+
+            <td align="center" valign="center">
+                <img src="shoes.jpg" alt="description here" height="200" width="200" />
+                <br />
+                Crunchyroll Shoes ($100)
+            </td>
+            <td align="center" valign="center">
+                <img src="hat.jpg" alt="description here" height="200" width="200" />
+                <br />
+                Crunchyroll Hat ($20)
+            </td>
+
+
+        </tr>
+
+
+    </table>
+
+
+    <div id="merch">
+        <label>Quantity: </label> <input type="text" v-model="quantity" /><br />
+        <label>Merch: </label>
+        <select v-model="charge">
+            <option v-for="(item, index) in cost">{{item}}</option>
+        </select>
+    
+        <br>
+        <input v-if="!display" type="button" value="Get Total" v-on:click="determineTotal" /><br>
+       
+        <!-- Displays the Total After Tax  -->
+
+        <p>Total:$ {{Total}}</p>
+
+
+
+
+
+    </div>
+
+    <script>
+        //Jabree Flor
+        const app = new Vue({
+            el: '#merch',
+            data: {
+                    
+                //cost of the merchandise
+                cost: [25, 50, 10, 30, 100, 20],
+                charge: 0,
+                //sales tax in my area
+                Tax: 0.06,
+                Total: 0,
+                quantity: 0,
+                // game over display boolean
+                display: false
+
+            }, //end data property 
+
+            methods: {
+                determineTotal: function (event) {
+
+                    //The tax is calculated and then added to the total
+                    let temp =((this.charge * parseFloat(this.quantity))*this.Tax) + this.charge * parseFloat(this.quantity)
+                    this.Total =temp.toFixed(2) ;
+
+
+
+                },
+
+            }
+        }) 
+    </script>
+
+
+
+</body>
+
+</html>

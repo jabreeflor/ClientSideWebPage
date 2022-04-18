@@ -1,0 +1,102 @@
+[
+    
+{
+"animeName":"My Hero Academia",
+"episodeCount":"88",
+"animeOpening":"https://www.youtube.com/embed/yu0HjPzFYnY",
+"animeSummary":"My Hero Academia is a Japanese superhero manga series written and illustrated by Kōhei Horikoshi. It has been serialized in Weekly Shōnen Jump since July 2014, with its chapters additionally collected into 28 tankōbon volumes as of September 2020.",
+"animeImage":"myheroacademia.jpg"
+},
+{
+"animeName":"Naruto",
+"episodeCount":"220",
+"animeOpening":"https://www.youtube.com/embed/zVgKnfN9i34",
+"animeSummary":"Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.",
+"animeImage":"naruto.jpg"
+},
+{
+"animeName":"Darling in the Franxx",
+"episodeCount":"24",
+"animeOpening":"https://www.youtube.com/embed/A4kLcDWBYcQ",
+"animeSummary":"The survivors of a catastrophic war against monsters cluster inside mobile fortress cities and train youngsters to defend humanity by piloting large battle robots called Franxx.",
+"animeImage":"darlinginthefranxx.jpg"
+},
+{
+"animeName":"Bleach",
+"episodeCount":"366",
+"animeOpening":"https://www.youtube.com/embed/dfh4JuzYNpM",
+"animeSummary":"Ichigo Kurosaki never asked for the ability to see ghosts -- he was born with the gift. When his family is attacked by a Hollow -- a malevolent lost soul -- Ichigo becomes a Soul Reaper, dedicating his life to protecting the innocent and helping the tortured spirits themselves find peace.",
+"animeImage":"bleach.jpg"
+},
+{
+"animeName":"Haikyuu",
+"episodeCount":"73",
+"animeOpening":"https://www.youtube.com/embed/7aNg8cV65Os",
+"animeSummary":"Haikyu!! is a Japanese manga series written and illustrated by Haruichi Furudate. The story follows Shōyō Hinata, a boy determined to become a great volleyball player despite his small stature.",
+"animeImage":"haikyu.jpg"
+},
+{
+"animeName":"Dragon Ball Super",
+"episodeCount":"131",
+"animeOpening":"https://www.youtube.com/embed/vWtOP721n0s",
+"animeSummary":"With Majin Buu now defeated and Earth at peace, the heroes have settled into normal lives, which in Goku's case means being a radish farmer. They can't get too comfortable in their new lives because more evildoers are on the horizon. ",
+"animeImage":"dragonballsuper.jpg"
+},
+{
+"animeName":"One Punch Man",
+"episodeCount":"24",
+"animeOpening":"https://www.youtube.com/embed/atxYe-nOa9w",
+"animeSummary":"One-Punch Man is a Japanese superhero franchise created by the artist ONE. It tells the story of Saitama, a superhero who can defeat any opponent with a single punch but seeks to find a worthy foe after growing bored by a lack of challenge due to his overwhelming strength.",
+"animeImage":"onepunchman.jpg"
+},
+{
+"animeName":"Boruto",
+"episodeCount":"174",
+"animeOpening":"https://www.youtube.com/embed/P4Z2EcYGYUI",
+"animeSummary":"Several years after the end of the Shinobi War, Naruto's son Boruto is about to enter the Chûnin exams alongside Sarada Uchiha and the mysterious Mitsuki.",
+"animeImage":"boruto.jpg"
+},
+{
+"animeName":"Demon Slayer",
+"episodeCount":"26",
+"animeOpening":"https://www.youtube.com/embed/pmanD_s7G3U",
+"animeSummary":"Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by Koyoharu Gotōge. It follows Tanjiro Kamado, a young boy who becomes a demon slayer after his family is slaughtered and his younger sister Nezuko is turned into a demon.",
+"animeImage":"demonslayer.jpg"
+},
+{
+"animeName":"God of Highschool",
+"episodeCount":"13",
+"animeOpening":"https://www.youtube.com/embed/EqaSwraHADk",
+"animeSummary":"The God of High School is a South Korean manhwa released as a webtoon written and illustrated by Yongje Park.",
+"animeImage":"godofhighschool.jpg"
+},    
+{
+"animeName":"Hunter x Hunter",
+"episodeCount":"148",
+"animeOpening":"https://www.youtube.com/embed/4stwmvvO_F4",
+"animeSummary":"Gon Freecs works hard to become a hunter while searching for the father he doesn't remember.",
+"animeImage":"hunterxhunter.jpg"
+},
+{
+"animeName":"Fullmetal Alchemist",
+"episodeCount":"51",
+"animeOpening":"https://www.youtube.com/embed/X59yPeVk_70",
+"animeSummary":"Fullmetal Alchemist is a Japanese shōnen manga series written and illustrated by Hiromu Arakawa. It was serialized in Square Enix's Monthly Shōnen Gangan magazine between July 2001 and June 2010; the publisher later collected the individual chapters into twenty-seven tankōbon volumes.",
+"animeImage":"fullmetal.jpg"
+},
+{
+"animeName":"Food Wars",
+"episodeCount":"86",
+"animeOpening":"https://www.youtube.com/embed/vV3l_1j8pPE",
+"animeSummary":"Food Wars!: Shokugeki no Soma is a Japanese manga series written by Yūto Tsukuda and illustrated by Shun Saeki. Yuki Morisaki also works as a Contributor, providing the recipes for the series. It was serialized in Shueisha's Weekly Shōnen Jump from November 2012 to June 2019.",
+"animeImage":"foodwars.jpg"
+},       
+{
+"animeName":"Attack on Titan",
+"episodeCount":"59",
+"animeOpening":"https://www.youtube.com/embed/yu0HjPzFYnY",
+"animeSummary":"Attack on Titan is a manga series created by Japanese illustrator Hajime Isayama. It is set in a world where humanity lives within cities surrounded by enormous walls that protect them from gigantic",
+"animeImage":"aot.jpg"
+}
+
+]
